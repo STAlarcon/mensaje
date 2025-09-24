@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mensaje Motivacional</title>
+  <style>
+    /* Fondo de la página con degradado azul */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Tarjeta central */
+    .card {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 25px;
+      padding: 40px 30px;
+      text-align: center;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+      max-width: 450px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+    }
+
+    /* Imagen dentro de la tarjeta */
+    .card img {
+      width: 100%;
+      border-radius: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+
+    /* Título */
+    .card h1 {
+      font-size: 2rem;
+      color: #0d1b3c;
+      margin-bottom: 15px;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+    }
+
+    /* Texto motivacional */
+    .card p {
+      font-size: 1.1rem;
+      color: #1a2b5b;
+      line-height: 1.6;
+    }
+
+    /* Animación al cargar */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b" alt="Autoestima y amor propio">
+    <h1>¡Cree en ti mismo!</h1>
+    <p>El amor propio es la base para construir la vida que sueñas.</p>
+  </div>
+</body>
+</html>
